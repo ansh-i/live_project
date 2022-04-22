@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGE  PORTAL</title>
+    <style>
+        .diagonal-box {
+	        background-image: linear-gradient(45deg, #dee607, #ea5616f3);
+	        transform: skewY(-11deg);
+            padding-bottom: 20em;
+            padding-left: 10em;
+        }
+
+        /* .content {
+	        max-width: 50em;
+	        margin: 0 auto;
+	        transform: skewY(11deg);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            padding: 10px; */
+        }
+        .boxes{ 
+            position:relative;
+        } 
+        
+        #box2{
+            width: 60%;
+            min-width: 2em;
+            height: 60em;
+            border-radius: 0.5em;
+            border: solid #666 1px;
+            background-color: #ccc;
+            padding: 1.5em;
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            /* display: table-cell; */
+            flex-direction: row;
+            /* justify-content: center; */
+            /* align-items: center; */
+            z-index: 1;
+            background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(225deg, #e3eb69 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ECEDDC 25%, transparent 25%), linear-gradient(45deg, #ECEDDC 25%, transparent 25%); background-size: 100px 100px; background-color: #f6f7ec;
+            text-shadow: 1px 1px #000, -1px 1px #000, -1px -1px #000, 1px -1px #000;
+            /* box-shadow: 5px 5px 8px yellow, 10px 10px 8px red, 15px 15px 8px black; */
+            box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.545);
+            overflow: hidden;
+
+
+            transition: all 1s;
+            border-top-right-radius:10px;
+            border-bottom-left-radius:10px;
+            &:after,&:before{
+                content:" ";
+                width:10px;
+                height:10px;
+                position:absolute;
+                border :0px solid #fff;
+                transition:all 1s;
+            }
+            &:after{
+                top:-1px;
+                left:-1px;
+                border-top:5px solid black;
+                border-left:5px solid black;
+            }
+            &:before{
+                bottom:-1px;
+                right:-1px;
+                border-bottom:5px solid black;
+                border-right:5px solid black;
+            }
+            &:hover{
+                border-top-right-radius:0px;
+                border-bottom-left-radius:0px;
+                &:before,&:after{
+      
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+        #box3{
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 10em;
+            width: 35%;
+            min-width: 2em;
+            height: 60em;
+            border-radius: 0.5em;
+            /* padding: 0.25em; */
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* z-index: 2; */
+            transform: skewY(11deg);
+            text-align:center;
+            transition: all 0.25s;
+            :root {
+	            --magic-number: 0.09719; tan(11°)/2
+	            --content-width: 100vw;
+	            --skew-padding: calc(var(--content-width) * var(--magic-number));
+            }
+
+            @media screen and (min-width: 42em) {
+	            :root {
+		            --content-width: 42em;
+	            }
+            }
+            
+        }
+        .boxes{
+            background-color: white;
+            /* box-sizing:border-box; */
+            /* padding: 2em; */
+            border-radius: 20px;
+            flex-direction: row;
+            justify-content: right;
+            padding: 20px;
+            border: 30px;
+            margin: 10px;
+            width: 10em;
+            height: 10em;
+            text-shadow: 1px 2px 2px yellow;
+            /* box-shadow: 4px 3px 8px 1px black; */
+  	        /* -webkit-box-shadow: 4px 3px 8px 1px black; */
+            box-shadow: 5px 5px 8px yellow, 10px 10px 8px red, 15px 15px 8px black;
+            transition: all 0.25s;
+
+        }
+        .q{
+            position: absolute;
+            /* text-align: center; */
+            /* color: #000; */
+            transform: skewY(11deg);
+            font-size: 55px;            
+        }
+        a{
+            text-decoration: none;
+            color: orange;
+            
+        }
+        a:hover{
+            box-shadow: #000;
+        }
+        #am,#ab,#al,#ak,#az{
+            width: 80%;
+            transition: all 0.25s;
+            /* padding: 100%; */
+            /* border-radius: 50%; */
+        }
+        .box2.box_inside{
+            background-color:rgba(19,30,33,0.4);
+            position: absolute;
+            z-index: 1000;
+            top:0;left:0;right:0;bottom:0;
+        }
+        .box2:hover.box_inside{
+            background-color:rgba(16,23,41,0);
+        }
+        .box2 .box_inside1{
+            position: absolute;
+            text-transform: uppercase;
+            font-family: 'Roboto';
+            padding: 7px;
+            z-index: 1000;
+            top:60%;left:-80%;
+            color:#ffffff;
+            font-weight: 300;
+            font-size: 13px; width: 80%;
+            -webkit-transition: all 0.7s;
+            -moz-transition: all 0.7s;
+            -ms-transition: all 0.7s;
+            transition: all 0.7s;
+
+        }
+        .box_inside1{
+            padding: 100px;
+            padding-bottom: 0%;
+            transform: skewY(11deg);
+            font-size: 75px;
+        }
+        .box_inside2{
+            padding: 100px;
+            padding-top: 0%;
+            transform: skewY(11deg);
+            font-size: 75px;
+        }
+        
+
+</style>
+</head>
+<body>
+    <div class="diagonal-box">
+        <div class="content"></div>
+        <div>
+            <div id="box2">
+                <div class="box_inside">
+                    <div class="box_inside1">Cummins College Of Engineering For Women</div>
+                    <div class="box_inside2">Nagpur</div>
+                </div>
+            </div>
+            <!-- <div style=" padding:5px; color:#1e4944; font-weight:300; font-size:30px; font-family:'Roboto';padding-top:20px;">Cummins College Of Engineering <font style="font-weight:400;">For Women</font></div> -->
+            <div id="box3">
+                <a href="registration.html"><div class="boxes"><b>REGISTRATION</b><br><br><img src= "Logo_register.jpg" id="am" ></div></a>
+                <a href="profile.html"><div class="boxes"><b>LOGIN</b><br><br><img src="edit-profile-vector-icon.jpg" id="az"> </div></a>
+                <a href="monthly_report.html"><div class="boxes"><b>MONTHLY REPORT</b><br><br><img src="th.jpg" id="ab"></div></a>
+                <a href="events.html"><div class="boxes"><b>EVENTS</b><br><br><img src="th (1).jpg" id="al"></div></a>
+                <a href="bhaubeez.html"><div class="boxes"><b>BHAUBEEZ</b><br><br><img src="charity-donation-money.jpg" id="ak"> </div></a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
